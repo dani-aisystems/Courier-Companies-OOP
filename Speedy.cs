@@ -20,7 +20,7 @@ public class Speedy : Courier
                 break;
             case "Чуплива":
                 price = 9;
-                break;
+                break; 
             case "Експресна":
                 price = 12;
                 break;
@@ -38,3 +38,4 @@ public class Speedy : Courier
         Console.WriteLine("Допълнителна такса: 1.50 € за всеки килограм над 2 кг");
     }
 }
+ 

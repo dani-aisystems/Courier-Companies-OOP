@@ -1,15 +1,10 @@
 using System;
 using System.Collections.Generic;
-using System.Globalization;
-using System.Text;
 
 class Program
 {
     static void Main()
     {
-        CultureInfo.CurrentCulture = CultureInfo.InvariantCulture;
-        Console.OutputEncoding = Encoding.UTF8;
-
         List<Courier> couriers = new List<Courier>();
         couriers.Add(new Speedy());
         couriers.Add(new Econt());
@@ -25,7 +20,7 @@ class Program
         couriers[2].SendShipment(thirdShipment);
         couriers[0].SendShipment(fourthShipment);
 
-        Console.WriteLine("--- Сравнение на цените за експресна пратка от 5.3 кг ---");
+        Console.WriteLine("Сравнение на цените за експресна пратка от 5.3 кг");
 
         foreach (Courier courier in couriers)
         {
@@ -33,7 +28,7 @@ class Program
         }
 
         Console.WriteLine();
-        Console.WriteLine("--- Информация за фирмите ---");
+        Console.WriteLine("Информация за фирмите");
 
         foreach (Courier courier in couriers)
         {

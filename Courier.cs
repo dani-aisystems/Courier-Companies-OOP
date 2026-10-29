@@ -42,7 +42,7 @@ public class Courier
         Console.WriteLine($"Получател: {shipment.Receiver}");
         Console.WriteLine($"Вид пратка: {shipment.Type}");
         Console.WriteLine($"Тегло: {shipment.Weight} кг");
-        Console.WriteLine($"Цена за доставка: {price:F2} €");
+        Console.WriteLine($"Цена за доставка: {price} €");
         Console.WriteLine("Пратката е изпратена успешно!");
         Console.WriteLine();
     }
